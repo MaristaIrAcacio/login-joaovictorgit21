@@ -1,0 +1,17 @@
+label
+{
+    font-size: xx-large;
+}
+
+input
+{
+    width: 600px;
+    position: relative;
+    top: 30px;
+}
+
+button
+{
+    width: 120px;
+    height: 30px;
+}

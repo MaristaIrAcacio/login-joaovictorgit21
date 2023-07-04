@@ -10,7 +10,7 @@ body
     width: 350px;
     height: 450px;
     position: relative;
-    left: 550px;
+    left: 35rem;
     top: 7rem;
     text-align: center;
     padding: 1rem;
@@ -134,3 +134,4 @@ input:hover
 {
     width: 100%;
 }
+
