@@ -21,6 +21,29 @@ function salvarUser()
 
     if (nomeUser) {
         dadosLista.push(nomeUser);
-        console.log(dadosLista);
+        criarLista();
+        //console.log(dadosLista);
     }
+}
+
+function criarLista()
+{
+    let table = document.getElementById("tabela").innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
+
+    for(let i=0; i <= (dadosLista.length-1); i++)
+    {
+        table += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onlick=''>Excluir</button></td></tr>";
+        document.getElementById('tabela').innerHTML = table;
+    }
+}
+
+function editar(i)
+{
+    document.getElementById('nomeUser').value = dadosLista[(i - 1)];
+    dadosLista.splice(dadosLista[(i - 1), 1]);
+}
+
+function excluir(i)
+{
+
 }

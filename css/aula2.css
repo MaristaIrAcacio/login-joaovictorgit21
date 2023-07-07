@@ -1,17 +1,38 @@
 label
 {
+    font-family: monospace;
     font-size: xx-large;
 }
 
+table
+{
+    width: 37rem;
+    height: 3rem;
+
+    position: relative;
+    top: 40px;
+
+    background-color: grey;
+}
 input
 {
-    width: 600px;
+    width: 588px;
+    height: 30px;
+
     position: relative;
+    right:87px;
     top: 30px;
+
+    font-family: monospace;
 }
 
 button
 {
     width: 120px;
     height: 30px;
+
+    position: relative;
+    top: 40px;
+
+    font-family: monospace;
 }
