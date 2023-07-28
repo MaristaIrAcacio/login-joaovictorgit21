@@ -33,7 +33,7 @@ function criarLista()
 
     for(let i=0; i <= (dadosLista.length-1); i++)
     {
-        table += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onlick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
+        table += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-success' onclick='editar(this.parentNode.parentNode.rowIndex)'>Editar</button><button class='btn btn-danger' onclick='excluir(this.parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
         document.getElementById('tabela').innerHTML = table;
     }
 }
